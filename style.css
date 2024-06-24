@@ -1,0 +1,62 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.webgl {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    outline: none;
+    z-index: 1;
+    transition: all 3s ease-in-out;
+}
+.webgl.zoomOut{
+    top: -150px;
+    transition: all 3s ease-in-out;
+}
+.webgl.zoomIn{
+    top: -150px;
+    opacity: 0;
+}
+.hero{
+    width: 100%;
+    height: 700px;
+    background-image: url('img/universe.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 130%;
+    transition: all 3s ease-out;
+    background-blend-mode: multiply;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+.hero.animate{
+    background-position: bottom right;
+    transition: all 3s ease-out;
+}
+.hero.animate.animateLeft{
+    background-position: bottom left;
+}
+.hero canvas{
+    width: 100%;
+}
+section{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+section .card{
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    min-width: 200px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
